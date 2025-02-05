@@ -13,6 +13,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useGlobalContext } from "@/context/globalContext";
 import { Badge } from "./ui/badge";
+import userprofile from "../app/images/user.png";
 
 function Profile() {
   const { userProfile } = useGlobalContext();
@@ -26,7 +27,7 @@ function Profile() {
         <Badge>{profession}</Badge>
         <DropdownMenuTrigger asChild className="cursor-pointer">
           <Image
-            src={profilePicture ? profilePicture : "/user.png"}
+            src={profilePicture ? profilePicture : userprofile}
             alt="avatar"
             width={36}
             height={36}
