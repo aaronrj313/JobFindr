@@ -27,7 +27,7 @@ function Profile() {
         <Badge>{profession}</Badge>
         <DropdownMenuTrigger asChild className="cursor-pointer">
           <Image
-            src={profilePicture ? profilePicture : userprofile}
+            src={profilePicture ? userProfile : userprofile}
             alt="avatar"
             width={36}
             height={36}
