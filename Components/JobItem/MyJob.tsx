@@ -11,6 +11,7 @@ import { Pencil, Trash } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useGlobalContext } from "@/context/globalContext";
 import { bookmark, bookmarkEmpty } from "@/utils/Icons";
+import userImg from "../../app/images/user.png"
 
 interface JobProps {
   job: Job;
@@ -49,7 +50,7 @@ function MyJob({ job }: JobProps) {
         >
           <Image
             alt={`logo`}
-            src={job.createdBy.profilePicture || "/user.png"}
+            src={userImg}
             width={48}
             height={48}
             className="rounded-full shadow-sm"

@@ -13,6 +13,7 @@ import { useParams, useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 import toast from "react-hot-toast";
 import { bookmark, bookmarkEmpty } from "@/utils/Icons";
+import userImg from "../../images/user.png"
 
 function page() {
   const { jobs, likeJob, applyToJob } = useJobsContext();
@@ -80,7 +81,7 @@ function page() {
               <div className="flex items-center gap-2">
                 <div className="w-14 h-14 relative overflow-hidden rounded-md flex items-center justify-center bg-gray-200">
                   <Image
-                    src={profilePicture || "/user.png"}
+                    src={userImg}
                     alt={name || "User"}
                     width={45}
                     height={45}

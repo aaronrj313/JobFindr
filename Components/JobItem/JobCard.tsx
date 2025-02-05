@@ -10,6 +10,7 @@ import { Separator } from "../ui/separator";
 import formatMoney from "@/utils/formatMoney";
 import { formatDates } from "@/utils/fotmatDates";
 import { bookmark, bookmarkEmpty } from "@/utils/Icons";
+import userImg from "../../app/images/user.png"
 
 interface JobProps {
   job: Job;
@@ -79,7 +80,7 @@ function JobCard({ job, activeJob }: JobProps) {
         >
           <div className="w-12 h-12 bg-gray-200 rounded-md flex items-center justify-center">
             <Image
-              src={profilePicture || "/user.png"}
+              src={userImg}
               alt={name || "User"}
               width={40}
               height={40}
