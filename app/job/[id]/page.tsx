@@ -81,11 +81,12 @@ function page() {
               <div className="flex items-center gap-2">
                 <div className="w-14 h-14 relative overflow-hidden rounded-md flex items-center justify-center bg-gray-200">
                   <Image
-                    src={userImg}
+                    src={profilePicture && profilePicture.trim() !== "" ? profilePicture : userImg}
                     alt={name || "User"}
                     width={45}
                     height={45}
                     className="rounded-md"
+                    unoptimized
                   />
                 </div>
 
